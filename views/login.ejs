@@ -1,0 +1,41 @@
+<!-- Code was written by Muhammad Sindida Hilmy -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WhatsApp Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f7f7f7;
+        padding-top: 50px;
+      }
+      .card {
+        background: white;
+        padding: 30px;
+        display: inline-block;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      img {
+        margin-top: 15px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>WhatsApp Login</h2>
+
+      <% if (isConnected) { %>
+        <p>WhatsApp Connected!</p>
+      <% } else if (qrCodeData) { %>
+        <p>Scan QR code di bawah ini menggunakan WhatsApp kamu:</p>
+        <img src="<%= qrCodeData %>" width="250" />
+      <% } else { %>
+        <p>Menunggu QR Code muncul...</p>
+      <% } %>
+    </div>
+  </body>
+</html>
