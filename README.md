@@ -16,7 +16,7 @@ Aplikasi ini memungkinkan pengguna untuk **login WhatsApp Web melalui QR Code** 
 ## Instalasi & Menjalankan
 1. Clone repository:
    git clone https://github.com/sindidadev/whatsapp-gateway.git
-   cd whatsapp-gateway
-2. npm install
-3. node index.js
-4. http://localhost:3000
+2. cd whatsapp-gateway
+3. npm install
+4. node index.js
+5. http://localhost:3000
